@@ -3,7 +3,7 @@ import time
 
 tree = BPlusTree('D:/adbms/b1.db', order=1000)
 insertion_start_time= time.time()
-for i in range(100):
+for i in range(1000):
     data=(2*i).to_bytes(10,'big')
     tree[i]=data
 insertion_end_time=time.time()
